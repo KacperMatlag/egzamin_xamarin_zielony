@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarin.MainPage">
+
+    <StackLayout BackgroundColor="LightGreen" x:Name="Container">
+        <Label Text="Wizyta u weterynarza"
+               BackgroundColor="SeaGreen" FontSize="30" Padding="10"/>
+        <Entry Placeholder="Imię i nazwisko właściciela" x:Name="Name"/>
+        <Label Text="Gatunek"/>
+        <StackLayout HeightRequest="200">
+            <ListView x:Name="Gatunki"  ItemSelected="Gatunki_ItemSelected"/>
+        </StackLayout>
+        <Grid >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Ile ma lat? 0"
+                   x:Name="AgeText" />
+            <Slider x:Name="WiekSlider"
+                    ValueChanged="WiekSlider_ValueChanged" Minimum="0" Value="0"  Grid.Column="1"/>
+        </Grid>
+        <Entry Placeholder="Cel wizyty" x:Name="Purpose"/>
+        <TimePicker Time="16:00" x:Name="Time"/>
+        <Button Text="OK" x:Name="Accept" Clicked="Accept_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

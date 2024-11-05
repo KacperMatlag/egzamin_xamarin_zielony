@@ -1,0 +1,86 @@
+# System plików
+.DS_Store
+Thumbs.db
+
+# Pliki z kompilacji
+bin/
+obj/
+
+# Pliki użytkownika
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio 2019/2022
+.vscode/
+.vs/
+**/*.code-workspace
+
+# Pliki konfiguracji z IDE
+*.sln.ide
+*.sln.docstates
+
+# Konfiguracja NuGet
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Pliki dla systemu macOS
+*.DS_Store
+
+# Baza danych użytkownika, cache, oraz inne pliki tymczasowe
+*.db
+*.sdb
+*.ldb
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Xamarin
+*.app
+*.ipa
+*.apk
+*.unityproj
+*.peak
+*.config
+*.exr
+*.a
+*.bundle
+*.so
+
+# Logi z symulatorów Androida i iOS
+*.log
+*.trace
+
+# Zawartość folderu dla Androida
+**/Android/bin/
+**/Android/obj/
+
+# Zawartość folderu dla iOS
+**/iOS/bin/
+**/iOS/obj/
+**/iOS/Debug/
+**/iOS/Release/
+**/iOS/AppBundle/
+
+# Pliki debugowania i logi
+*.log
+*.vshost.*
+*.pidb
+*.suo
+*.svclog
+*.userprefs
+*.tmd
+
+# Pliki auto-generowane przez kompilator
+*.aps
+*.hmap
+*.ipa
+*.crash
+*.criteo
